@@ -570,6 +570,15 @@ a {
 
 .tui-shou {
   background: var(--sf-black-soft);
+  color: var(--sf-ivory);
+}
+
+.tui-shou .eyebrow {
+  color: var(--sf-red-bright);
+}
+
+.tui-shou .body-text {
+  color: var(--sf-ivory-dim);
 }
 
 .tui-shou-grid {
@@ -687,13 +696,22 @@ a {
 
 .trening {
   background: var(--sf-black-soft);
+  color: var(--sf-ivory);
+}
+
+.trening .eyebrow {
+  color: var(--sf-red-bright);
+}
+
+.trening .body-text {
+  color: var(--sf-ivory-dim);
 }
 
 .trening-loc {
   font-size: 0.82rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: var(--sf-red);
+  color: var(--sf-red-bright);
   margin: -14px 0 26px;
 }
 
@@ -705,7 +723,7 @@ a {
 }
 
 .trening-item {
-  border-top: 1px solid var(--sf-line-soft);
+  border-top: 1px solid var(--sf-line);
   padding-top: 20px;
 }
 
@@ -714,12 +732,13 @@ a {
   font-weight: 500;
   font-size: 1.25rem;
   margin: 0 0 6px;
+  color: var(--sf-ivory);
 }
 
 .trening-item p {
   margin: 0;
   font-size: 0.9rem;
-  color: rgba(12, 12, 11, 0.68);
+  color: var(--sf-ivory-dim);
 }
 
 /* ---------------------------------- FAQ ---------------------------------- */
