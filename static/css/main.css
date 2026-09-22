@@ -270,6 +270,10 @@ a {
   display: none;
 }
 
+.sticky-cta-bar {
+  display: none;
+}
+
 /* ==========================================================================
    Hero
    ========================================================================== */
@@ -479,20 +483,24 @@ a {
 
 .wudang-card figcaption {
   margin-top: 14px;
+  text-align: center;
+}
+
+.wudang-caption {
+  display: block;
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--sf-gray);
-  text-align: center;
 }
 
-.photo-attribution {
-  grid-column: 1 / -1;
-  margin: 8px 0 0;
+.wudang-credit {
+  display: block;
+  margin-top: 4px;
   font-size: 0.62rem;
-  line-height: 1.5;
+  letter-spacing: 0.01em;
   color: var(--sf-gray);
-  text-align: center;
+  opacity: 0.75;
 }
 
 /* ---------------------------------- Forma ---------------------------------- */
@@ -681,16 +689,19 @@ a {
 .ljudi-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  margin-top: 20px;
+  gap: 60px;
+  margin-top: 40px;
 }
 
-.person-card {
-  margin: 0;
+.person-block {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 24px;
+  align-items: center;
 }
 
 .person-photo {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   background: var(--sf-black-soft);
 }
@@ -703,18 +714,18 @@ a {
 }
 
 .person-photo--marko img {
-  object-fit: contain;
-  object-position: center;
+  object-position: 100% 20%;
 }
 
-.person-card figcaption {
-  margin-top: 18px;
+.person-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .person-name {
   display: block;
   font-family: var(--font-serif);
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   letter-spacing: 0.03em;
 }
 
@@ -727,10 +738,16 @@ a {
   color: var(--sf-red-bright);
 }
 
+.person-divider {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin: 18px 0;
+  background: var(--sf-red-bright);
+}
+
 .person-quote {
-  margin: 18px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid var(--sf-line);
+  margin: 0;
   max-width: 32ch;
 }
 
@@ -738,19 +755,19 @@ a {
   margin: 0;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   color: var(--sf-ivory-dim);
 }
 
 .person-quote cite {
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
   font-style: normal;
   font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--sf-gray);
+  line-height: 1.6;
 }
 
 /* ---------------------------------- Za tebe ---------------------------------- */
@@ -1075,7 +1092,57 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .ljudi-grid {
+    gap: 48px;
+  }
+
+  .person-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .person-photo {
+    aspect-ratio: 4 / 5;
+  }
+
   .footer-inner {
     flex-direction: column;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+
+  .sticky-cta-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background: var(--sf-black);
+    border-top: 1px solid var(--sf-line);
+  }
+
+  .sticky-cta-item {
+    flex: 1;
+    text-align: center;
+    padding: 18px 0;
+    font-family: var(--font-sans);
+    font-size: 0.74rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .sticky-cta-primary {
+    background: var(--sf-red);
+    color: var(--sf-ivory);
+  }
+
+  .sticky-cta-call {
+    background: var(--sf-black);
+    color: var(--sf-ivory);
+    border-left: 1px solid var(--sf-line);
   }
 }
