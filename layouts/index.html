@@ -1,0 +1,284 @@
+{{ define "main" }}
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="{{ "images/ucitelj.png" | relURL }}" alt="Učitelj San Feng škole u pokretu, u šumi" class="hero-img">
+    <div class="hero-scrim"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-mark" aria-hidden="true">三丰</p>
+    <h1 class="hero-title">SAN FENG</h1>
+    <p class="hero-subtitle">Wu Dang Mi Chuan Tai Ji Quan</p>
+    <h2 class="hero-headline">
+      Pokret počinje<br>
+      kada prestaneš<br>
+      da ga forsiraš.
+    </h2>
+    <p class="hero-kicker">Unutrašnja borilačka veština · Beograd</p>
+    <p class="hero-text">Veština koja kroz pokret razvija telo, pažnju, ravnotežu i razumevanje.</p>
+    <div class="hero-cta">
+      <a href="#trening" class="btn btn-primary">Dođi na trening</a>
+      <a href="#tradicija" class="btn btn-ghost">Upoznaj veštinu</a>
+    </div>
+  </div>
+  <a href="#tradicija" class="scroll-cue" aria-label="Pomeri se nadole">
+    <span></span>
+  </a>
+</section>
+
+<!-- TRADICIJA -->
+<section class="section tradicija" id="tradicija">
+  <div class="section-inner tradicija-grid">
+    <div class="tradicija-text">
+      <p class="eyebrow">San Feng</p>
+      <h2 class="section-title">Tradicija koja traje</h2>
+      <p class="body-text">
+        Zhang Sanfeng, legendarna figura povezana sa tradicijom Tai Ji Quana i Wudanga, predstavlja duh
+        ovog puta — spoj unutrašnjeg rada, borilačke veštine i razvoja kroz praksu.
+      </p>
+      <p class="body-text">
+        Naš rad polazi od poštovanja tradicije i njenog živog prenošenja kroz praksu.
+      </p>
+      <a href="#forma" class="link-cta">Više o tradiciji <span aria-hidden="true">→</span></a>
+    </div>
+
+    <div class="tradicija-visual">
+      <div class="tradicija-emblem">
+        <svg viewBox="0 0 200 200" class="wudang-motif" aria-hidden="true">
+          <circle cx="100" cy="100" r="98" fill="none" stroke="currentColor" stroke-width="1"></circle>
+          <path d="M15 130 L55 75 L80 105 L110 55 L145 100 L185 125" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"></path>
+          <circle cx="100" cy="45" r="14" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+          <path d="M100 31 A7 7 0 0 1 100 45 A7 7 0 0 0 100 59 A14 14 0 0 0 100 31 Z" fill="currentColor"></path>
+          <circle cx="100" cy="38" r="2.2" fill="var(--san-feng-ivory)"></circle>
+          <circle cx="100" cy="52" r="2.2" fill="currentColor"></circle>
+        </svg>
+        <p class="emblem-caption">Wudang planine</p>
+      </div>
+
+      <figure class="portrait-card portrait-teacher">
+        <img src="{{ "images/ucitelj.png" | relURL }}" alt="Učitelj San Feng škole, u crnom kimonu, u šumi" loading="lazy">
+      </figure>
+
+      <figure class="portrait-card portrait-marko">
+        <img src="{{ "images/marko.png" | relURL }}" alt="Marko, prvi učenik San Feng škole" loading="lazy">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- NAŠA FORMA -->
+<section class="section forma" id="forma">
+  <div class="section-inner forma-grid">
+    <div class="forma-text">
+      <p class="eyebrow">Naša forma</p>
+      <h2 class="section-title">Wu Dang Mi Chuan<br>Tai Ji Quan 64</h2>
+      <p class="body-text">
+        U našoj školi učimo Wu Dang Mi Chuan Tai Ji Quan 64 — tradicionalnu formu koja se kroz
+        kontinuitet pokreta, strukturu i princip postepeno produbljuje kroz praksu.
+      </p>
+      <ul class="tag-list">
+        <li>Struktura</li>
+        <li>Koordinacija</li>
+        <li>Ravnoteža</li>
+        <li>Unutrašnji rad</li>
+        <li>Borilačka primena</li>
+      </ul>
+    </div>
+    <div class="forma-stat">
+      <span class="forma-number">64</span>
+      <span class="forma-label">Forme</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPI -->
+<section class="section principi" id="principi">
+  <div class="section-inner principi-inner">
+    <p class="eyebrow">Principi</p>
+    <h2 class="section-title">Telo · Dah · Pažnja · Pokret</h2>
+    <p class="body-text body-text--wide">
+      Kroz praksu razvijamo stabilnu strukturu tela, koordinaciju, ravnotežu, pažnju i prirodniji
+      način kretanja.
+    </p>
+    <p class="body-text body-text--wide">
+      Unutrašnji i spoljašnji aspekti prakse ne posmatraju se odvojeno, već kao delovi jedinstvenog
+      procesa učenja.
+    </p>
+  </div>
+</section>
+
+<!-- TUI SHOU -->
+<section class="section tui-shou" id="tui-shou">
+  <div class="section-inner tui-shou-grid">
+    <div class="tui-shou-mark" aria-hidden="true">推手</div>
+    <div class="tui-shou-text">
+      <p class="eyebrow">Tui Shou</p>
+      <h2 class="section-title">Partnerski rad</h2>
+      <p class="body-text">
+        Tui Shou je rad u paru kroz koji učimo da slušamo, osećamo pritisak, održimo ravnotežu i
+        reagujemo bez nepotrebne sile.
+      </p>
+      <p class="body-text">
+        Ono što učimo kroz formu počinje da dobija smisao kroz kontakt sa partnerom.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- OD FORME DO PRIMENE -->
+<section class="section primena">
+  <div class="section-inner">
+    <p class="eyebrow">Put prakse</p>
+    <h2 class="section-title">Od forme do primene</h2>
+    <p class="body-text body-text--wide">
+      Tai Ji Quan nije samo niz pokreta koje treba zapamtiti. Kroz praksu istražujemo kako se
+      princip kretanja, struktura i rad sa partnerom mogu razumeti u realnoj situaciji.
+    </p>
+
+    <div class="primena-cards">
+      <div class="primena-card">
+        <span class="primena-index">01</span>
+        <h3>Forma</h3>
+        <p>Struktura i kontinuitet.</p>
+      </div>
+      <div class="primena-card">
+        <span class="primena-index">02</span>
+        <h3>Kontakt</h3>
+        <p>Rad sa partnerom.</p>
+      </div>
+      <div class="primena-card">
+        <span class="primena-index">03</span>
+        <h3>Primena</h3>
+        <p>Razumevanje pokreta kroz borilački kontekst.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UČITELJ + PRVI UČENIK -->
+<section class="section ljudi" id="ucitelj">
+  <div class="section-inner">
+    <p class="eyebrow">Škola</p>
+    <h2 class="section-title">Učitelj i prvi učenik</h2>
+
+    <div class="ljudi-grid">
+      <figure class="person-card">
+        <div class="person-photo">
+          <img src="{{ "images/ucitelj.png" | relURL }}" alt="Učitelj San Feng škole, u crnom kimonu, u šumi" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="person-name">Učitelj</span>
+        </figcaption>
+      </figure>
+
+      <figure class="person-card">
+        <div class="person-photo person-photo--marko">
+          <img src="{{ "images/marko.png" | relURL }}" alt="Marko, prvi učenik San Feng škole" loading="lazy">
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- DA LI JE OVA PRAKSA ZA TEBE -->
+<section class="section za-tebe">
+  <div class="section-inner za-tebe-inner">
+    <h2 class="section-title">Da li je ova praksa za tebe?</h2>
+    <p class="body-text body-text--wide">
+      Za one koji žele da upoznaju tradicionalnu kinesku borilačku veštinu kroz ozbiljnu i
+      postepenu praksu.
+    </p>
+    <p class="body-text body-text--wide">
+      Nije potrebno prethodno iskustvo, ukoliko učitelj potvrdi da su početnici dobrodošli.
+    </p>
+    <p class="body-text body-text--wide">
+      Uči se korak po korak — kroz telo, pokret, pažnju i rad sa partnerom.
+    </p>
+  </div>
+</section>
+
+<!-- TRENING U BEOGRADU -->
+<section class="section trening" id="trening">
+  <div class="section-inner">
+    <p class="eyebrow">Praksa u Beogradu</p>
+    <h2 class="section-title">Trening u Beogradu</h2>
+    <p class="trening-loc">Žarkovo · Beograd</p>
+    <p class="body-text body-text--wide">
+      Treniramo u maloj grupi, uz pažnju posvećenu svakom polazniku i postepenom razvoju kroz
+      praksu.
+    </p>
+
+    <div class="trening-grid">
+      <div class="trening-item">
+        <h3>Žarkovo</h3>
+        <p>Beograd</p>
+      </div>
+      <div class="trening-item">
+        <h3>Mala grupa</h3>
+        <p>Individualan pristup</p>
+      </div>
+      <div class="trening-item">
+        <h3>Wu Dang Mi Chuan</h3>
+        <p>Tai Ji Quan 64</p>
+      </div>
+      <div class="trening-item">
+        <h3>Tradicionalna praksa</h3>
+        <p>Telo · pažnja · veština</p>
+      </div>
+    </div>
+
+    <a href="#kontakt" class="btn btn-primary">Dođi na trening</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="section-inner">
+    <p class="eyebrow">Pitanja</p>
+    <h2 class="section-title">Najčešća pitanja</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Da li je potrebno prethodno iskustvo?</summary>
+        <p>Ne. Treninzi su postavljeni tako da mogu da prate i potpuni početnici, uz postepeno
+          uvođenje u formu i osnovne principe kretanja.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Šta se trenira?</summary>
+        <p>Trenira se Wu Dang Mi Chuan Tai Ji Quan 64 — forma, principi kretanja i disanja, pažnja
+          i partnerski rad kroz Tui Shou.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Da li je ovo borilačka veština ili vežba za zdravlje?</summary>
+        <p>Reč je o unutrašnjoj borilačkoj veštini. Kroz praksu se razvijaju telo, ravnoteža i
+          pažnja, bez zdravstvenih obećanja ili medicinskih tvrdnji.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Koliko traje trening?</summary>
+        <p>Trajanje i dinamika treninga dogovaraju se sa učiteljem, u zavisnosti od grupe i nivoa
+          polaznika.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Gde se trenira?</summary>
+        <p>U Beogradu, na Žarkovu. Tačna lokacija i termini se dogovaraju putem kontakta.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Kako mogu da dođem na prvi trening?</summary>
+        <p>Javi nam se putem kontakta na sajtu i dogovorićemo tvoj prvi dolazak.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final-cta" id="kontakt">
+  <div class="section-inner final-cta-inner">
+    <p class="final-mark" aria-hidden="true">三丰</p>
+    <h2 class="final-title">Pokret se uči.<br>Veština se gradi.</h2>
+    <p class="body-text">Upoznaj Wu Dang Mi Chuan Tai Ji Quan 64 kroz praksu.</p>
+    <a href="mailto:kontakt@sanfeng.rs" class="btn btn-primary btn-lg">Dođi na trening</a>
+  </div>
+</section>
+
+{{ end }}

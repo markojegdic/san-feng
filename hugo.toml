@@ -1,0 +1,6 @@
+baseURL = "https://sanfeng.rs/"
+title = "San Feng — Wu Dang Mi Chuan Tai Ji Quan"
+locale = "sr-RS"
+
+[params]
+  description = "San Feng — škola tradicionalne kineske unutrašnje borilačke veštine Wu Dang Mi Chuan Tai Ji Quan 64. Žarkovo, Beograd."
