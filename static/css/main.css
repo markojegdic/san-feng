@@ -465,26 +465,34 @@ a {
   margin: 0;
 }
 
-.portrait-card {
+.wudang-card {
   margin: 0;
   aspect-ratio: 3 / 4;
-  overflow: hidden;
-  background: var(--sf-black);
 }
 
-.portrait-card img {
+.wudang-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background: var(--sf-black);
 }
 
-.portrait-teacher img {
-  object-position: 50% 15%;
+.wudang-card figcaption {
+  margin-top: 14px;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--sf-gray);
+  text-align: center;
 }
 
-.portrait-marko img {
-  object-fit: contain;
-  object-position: center;
+.photo-attribution {
+  grid-column: 1 / -1;
+  margin: 8px 0 0;
+  font-size: 0.62rem;
+  line-height: 1.5;
+  color: var(--sf-gray);
+  text-align: center;
 }
 
 /* ---------------------------------- Forma ---------------------------------- */
@@ -541,11 +549,11 @@ a {
   font-family: var(--font-serif);
   font-size: clamp(6rem, 10vw, 9rem);
   line-height: 1;
+  margin-top: 12px;
   color: var(--sf-red-bright);
 }
 
 .forma-label {
-  margin-top: 12px;
   font-size: 0.78rem;
   letter-spacing: 0.36em;
   text-transform: uppercase;
@@ -566,29 +574,43 @@ a {
   margin-right: auto;
 }
 
-/* ---------------------------------- Tui Shou ---------------------------------- */
+/* ---------------------------------- Chi Gong ---------------------------------- */
 
-.tui-shou {
+.chigong-inner {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chigong .body-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------------------------------- Tehnike iz forme ---------------------------------- */
+
+.tehnike {
   background: var(--sf-black-soft);
   color: var(--sf-ivory);
 }
 
-.tui-shou .eyebrow {
+.tehnike .eyebrow {
   color: var(--sf-red-bright);
 }
 
-.tui-shou .body-text {
+.tehnike .body-text {
   color: var(--sf-ivory-dim);
 }
 
-.tui-shou-grid {
+.tehnike-grid {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   gap: 60px;
   align-items: center;
 }
 
-.tui-shou-mark {
+.tehnike-mark {
   font-family: var(--font-serif);
   font-size: clamp(5rem, 9vw, 8rem);
   line-height: 1;
@@ -597,11 +619,26 @@ a {
   justify-self: center;
 }
 
+.tehnike-flow {
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sf-ivory-dim);
+  margin: 22px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tehnike-flow span {
+  color: var(--sf-red-bright);
+}
+
 /* ---------------------------------- Primena ---------------------------------- */
 
 .primena-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-top: 56px;
 }
@@ -675,9 +712,45 @@ a {
 }
 
 .person-name {
+  display: block;
   font-family: var(--font-serif);
-  font-size: 1.2rem;
-  letter-spacing: 0.06em;
+  font-size: 1.35rem;
+  letter-spacing: 0.03em;
+}
+
+.person-role {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--sf-red-bright);
+}
+
+.person-quote {
+  margin: 18px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--sf-line);
+  max-width: 32ch;
+}
+
+.person-quote p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--sf-ivory-dim);
+}
+
+.person-quote cite {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sf-gray);
 }
 
 /* ---------------------------------- Za tebe ---------------------------------- */
@@ -918,7 +991,7 @@ a {
 @media (max-width: 1080px) {
   .tradicija-grid,
   .forma-grid,
-  .tui-shou-grid {
+  .tehnike-grid {
     grid-template-columns: 1fr;
   }
 
@@ -929,7 +1002,7 @@ a {
     padding-top: 40px;
   }
 
-  .tui-shou-mark {
+  .tehnike-mark {
     writing-mode: horizontal-tb;
     justify-self: flex-start;
   }
@@ -995,10 +1068,7 @@ a {
     padding: 100px 0;
   }
 
-  .tradicija-visual {
-    grid-template-columns: 1fr 1fr;
-  }
-
+  .tradicija-visual,
   .ljudi-grid,
   .primena-cards,
   .trening-grid {
