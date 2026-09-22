@@ -371,7 +371,8 @@ a {
   margin: 0 0 40px;
 }
 
-.hero-cta {
+.hero-cta,
+.cta-group {
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
